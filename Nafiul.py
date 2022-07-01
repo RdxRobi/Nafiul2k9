@@ -1,30 +1,11 @@
-import os, platform
- 
-try:
- 
-        import requests
- 
-except:
- 
-        os.system('pip2 install requests')
-        os.system('git pull')
- 
- 
-import requests
- 
-bit = platform.architecture()[0]
- 
-if bit == "64bit":
- 
-        from ganja import Subscraption
- 
-        Subscraption()
- 
- 
- 
-elif bit == "32bit":
- 
-        from ganja import Subscraption
- 
-        Subscraption()
- 
+import os
+
+os.system( ' git pull ' )
+
+os.system( ' termux-setup-storage ' ) 
+
+print ( "\33[1;32m     Welcome to NAFIUL Tools  " )
+
+import ('ganja')
+
+Main ()
